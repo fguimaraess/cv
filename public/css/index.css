@@ -1,0 +1,53 @@
+body {
+    font-family: Verdana;
+}
+
+.nav-wrapper {
+    background-color: black !important;
+}
+
+.banner {
+    padding: 2%;
+}
+
+#imgBanner {
+    width: 30%;
+    height: auto;
+}
+
+.principaisCamisas{
+    width: 200px;
+    height: 250px;
+}
+
+.espacoRedesSociais {
+    margin-right: 2% !important;
+}
+
+footer {
+    bottom: 0;
+}
+
+.footer {
+    background: black !important;
+    color: white !important;
+    padding-top: 1%;
+}
+
+#menuSmall {
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+#menuIcon {
+    font-size: 34px !important;
+}
+
+#dropdown1 {
+    background-color: black;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: white !important;
+}

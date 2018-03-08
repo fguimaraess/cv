@@ -58,3 +58,7 @@ footer {
     color: white;
     padding: 4px 12px;
 }
+
+.hover-menu:hover {
+    background-color: gray;
+}

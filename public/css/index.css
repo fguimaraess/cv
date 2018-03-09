@@ -62,6 +62,10 @@ body {
     background-color: gray;
 }
 
+.menu-ativo {
+    background-color: gray;
+}
+
 #title {
     border: 1px solid;
     text-align: center;
@@ -74,12 +78,8 @@ body {
     text-align: left;
 }
 
-#formContato {
-    background-color: lightgray;
-}
-
-#btnEnviar{
-    background-color: black;
+#btnEnviar, #btnDownload {
+    background-color: lightslategrey;
 }
 
 .skills-img {
@@ -92,6 +92,10 @@ body {
     font-weight: bold;
 }
 
+.borderCV {
+    border: 1px solid;
+    padding-left: 1%;
+}
 
 @media (max-width: 880px) and (min-width: 541px)
 {

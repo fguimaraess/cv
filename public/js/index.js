@@ -20,6 +20,11 @@ $(document).ready(function (){
       enviaEmail(e);
   })
 
+  $('.nav-menu a').click(function () {
+    var activeElements = $('.menu-ativo');
+    activeElements.removeClass('menu-ativo');
+    $(this).addClass('menu-ativo');
+  });
 })
 
 function addActions() {

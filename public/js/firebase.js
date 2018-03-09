@@ -1,4 +1,5 @@
-var config = {
+// Initialize Firebase
+  var config = {
     apiKey: "AIzaSyBqx-m3K9npJ-YPoikT-Btg7TS8t2NrHw4",
     authDomain: "cv-felipe.firebaseapp.com",
     databaseURL: "https://cv-felipe.firebaseio.com",

@@ -1,18 +1,26 @@
 body {
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
 }
 
 .nav-wrapper {
-    background-color: black !important;
+    background-color: lightslategrey !important;
 }
 
 .banner {
     padding: 2%;
 }
 
-#imgBanner {
-    width: 30%;
+#imgPerfil {
+    width: 80%;
     height: auto;
+    border-radius: 50%
+}
+
+#nomePerfil{
+    text-align: left;
+    font-size: 14pt;
+    padding-left: 15%;
 }
 
 .principaisCamisas{
@@ -24,15 +32,13 @@ body {
     margin-right: 2% !important;
 }
 
-footer {
-    bottom: 0;
-}
-
-.footer {
-    background: black !important;
+ .footer {
+    position: absolute;
+    background: lightslategrey !important;
     color: white !important;
     padding-top: 1%;
-}
+    bottom: 0 !important;
+}  
 
 #menuSmall {
     margin-right: 30px;
@@ -45,20 +51,61 @@ footer {
 }
 
 #dropdown1 {
-    background-color: black;
+    background-color: lightslategrey !important;
 }
 
 .dropdown-content li>a, .dropdown-content li>span {
     color: white !important;
 }
 
-.btn-comprar {
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-    padding: 4px 12px;
-}
-
 .hover-menu:hover {
     background-color: gray;
+}
+
+#title {
+    border: 1px solid;
+    text-align: center;
+    border-radius: 25%;
+    background-color: lightslategrey;
+    color: white;
+}
+
+#description {
+    text-align: left;
+}
+
+#formContato {
+    background-color: lightgray;
+}
+
+#btnEnviar{
+    background-color: black;
+}
+
+.skills-img {
+    width: 20px;
+    height: 20px;
+}
+
+.skills-name{
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+
+@media (max-width: 880px) and (min-width: 541px)
+{
+    #nomePerfil{
+        text-align: left;
+        font-size: 8pt;
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 540px) and (min-width: 320px)
+{
+    #nomePerfil{
+        text-align: left;
+        font-size: 8pt;
+    }
 }

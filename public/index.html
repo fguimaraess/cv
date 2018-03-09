@@ -2,28 +2,50 @@
 <html>
 
 <head>
-  <title>Improvável Loja</title>
-  <link rel="icon" />
+  <title>Felipe Guimarães</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=10">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes"
+  <link rel="icon" href="../img/favicon.png"/>
   <link href="../css/index.css" rel="stylesheet">
+  <link href="../css/sweetalert.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/favicon.png">
+  <link rel="apple-touch-icon" href="../img/favicon.png">
+  <link rel="icon" href="../img/favicon.png">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <nav>
+<nav>
     <div class="nav-wrapper">
       <ul class="right hide-on-small-only">
-        <li class="hover-menu">
-          <a href="#">
-            <i class="material-icons right">content_paste</i>CV</a>
+        <li class="hover-menu" >
+          <div class="menu" id="home-menu">
+          <a href="#" id="home-menu">
+          <i class="material-icons right">home</i>Home</a>
+          </div>
         </li>
         <li class="hover-menu">
+          <div class="menu" id="cv-menu">
+            <a href="#">
+            <i class="material-icons right">content_paste</i>CV</a>
+            </div>
+        </li>
+        <li class="hover-menu">
+          <div class="menu" id="projetos-menu">
           <a href="#">
             <i class="material-icons right">card_travel</i>Projetos</a>
+            </div>
+        </li>
+        <li class="hover-menu">
+          <div class="menu" id="contato-menu">
+          <a href="#">
+            <i class="material-icons right">local_phone</i>Contato</a>
+            </div>
         </li>
       </ul>
       <ul class="right hide-on-med-and-up">
@@ -32,74 +54,236 @@
                 <i class="material-icons" id="menuIcon">menu</i>
               </a>
               <ul id='dropdown1' class='dropdown-content'>
-                  <li class="hover-menu">
-          <a href="#">
-            <i class="material-icons right">content_paste</i>CV</a>
+                <li class="hover-menu">
+                  <div class="menu" id="home-menu">
+                      <a href="#">
+                      Home</a>
+                  </div>
                 </li>
                 <li class="hover-menu">
-                  <a href="#">
-                    <i class="material-icons right">card_travel</i>Projetos</a>
+                  <div class="menu" id="cv-menu">
+                    <a href="#">
+                    CV</a>
+                  </div>
+                </li>
+                <li class="hover-menu">
+                  <div class="menu" id="projetos-menu">
+                    <a href="#">
+                    Projetos</a>
+                  </div>
+                </li>
+                <li class="hover-menu">
+                  <div class="menu" id="contato-menu">
+                    <a href="#">
+                    Contato</a>
+                  </div>
                 </li>
                 </ul>
           </div>
       </ul>
     </div>
-  </nav>
+</nav>
 
   <div class="row left-align banner">
-    <img id="imgBanner" src="../img/bannersite.png" />
+      <div class="col s3">
+        <img id="imgPerfil" src="../img/perfil.jpg" />
+        <br />
+        <div id="nomePerfil">Felipe Guimarães</div>
+      </div>
+      <!-- Inicio Content -->
+      <div class="content">
+<!-- HOME -->
+        <div class="col s5" id="home-content">
+            <h5 id="title"><p>Full-Stack Developer</p></h5>
+            <p id="description">Programador apaixonado e entusiasta, com experiência em desenvolvimento de Games, Mobile e Web;<br />
+              .NET, SQL, Front-End (HTML, CSS, JS e JQuery);<br/>
+              Bacharel em Sistemas de Informação;<br/>
+              Capacidade de aprender e se familiarizar com novas tecnologias com rapidez; </p>
+            <div class="row">
+              <h5>Skills:</h5>
+                <div class="left-align">
+                  <div class="col s4">
+                    <span class="skills-name">C#</span>
+                  </div>
+                  <div class="col s8 left-align"> 
+                    <span id="c#-skill"></span>
+                  </div>
 
-  <div class="row center-align">
-    <h4>Sobre mim</h4>
-    <br>
-    <div class="col s12 m4 l4">
-      <img class="principaisCamisas" src="../img/camisa1.jpg" />
-      <p>Camisa Grifinoria</p>
-      <p>R$60,00</p>
-      <p><button class="btn-comprar">Comprar</button></p>
-    </div>
-    <div class="col s12 m4 l4">
-      <img class="principaisCamisas" src="../img/camisa2.jpg" />
-      <p>Camisa que o psy usaria</p>
-      <p>R$60,00</p>
-    <p><button class="btn-comprar">Comprar</button></p>
-    </div>
-    <div class="col s12 m4 l4">
-      <img class="principaisCamisas" src="../img/camisa3.jpg" />
-      <p>Camisa que ninguem vai querer</p>
-      <p>R$60,00</p>
-      <p><button class="btn-comprar">Comprar</button></p>
-    </div>
+                <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">LinQ/EF</span>
+                   </div>
+                  <div class="col s8 left-align"> 
+                    <span id="linq-skill"></span>
+                  </div>
+                </div>
+
+                <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">JS</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="js-skill"></span>
+                </div>
+
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">jQuery</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="jquery-skill"></span>
+                    </div>
+                  </div>
+                  
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">NodeJS</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="node-skill"></span>
+                    </div>
+                  </div>
+
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">GulpJS</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="gulp-skill"></span>
+                    </div>
+                  </div>
+
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">HTML5/CSS3</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="html-skill"></span>
+                    </div>
+                  </div>
+
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">SQL</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="sql-skill"></span>
+                    </div>
+                  </div>
+
+                  <div class="left-align">
+                    <div class="col s4">
+                      <span class="skills-name">GIT</span>
+                    </div>
+                    <div class="col s8 left-align"> 
+                      <span id="git-skill"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+<!-- FIM HOME -->
+
+<!-- CV -->
+      <div class="col s5" id="cv-content" hidden>
+        <h5 id="title"><p>CV</p></h5>
+        <a id="btnDownload" target="_blank">Download</a>
+      </div>
+<!-- FIM CV -->      
+
+<!-- PROJETOS -->
+      <div id="projetos-content" hidden></div>
+<!-- FIM PROJETOS -->
+
+<!-- CONTATO -->
+      <div id="contato-content" hidden>
+      <div class="col s8"><h5 id="title"><p>Contato</p></h5></div>
+      <div class="row">
+        <div class="col s2"></div>
+        <form class="col s8" id="formContato">
+          <div class="row">
+              <div class="input-field col s6">
+                <input id="name-field" type="text" name="name" class="validate">
+                <label for="name-field">Nome</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="email-field" type="email" name="_replyto" class="validate">
+                <label for="email-field" data-error="Preenchimento obrigatório" data-success="OK">E-mail</label>
+              </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="subject-field" type="text" name="_subject" class="validate">
+              <label for="subject-field">Assunto</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea-field" class="materialize-textarea" name="message"></textarea>
+              <label for="textarea-field">Mensagem</label> 
+            </div>
+          </div>
+          <div class="row right-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="btnEnviar" value="Send">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+        <div class="col s2"></div>
+      </div>
+      </div>
+<!-- FIM CONTATO -->
+      </div> <!-- Fim Content -->
+
+  <div class="col s4">
+  </div>
+  </div>
+</div>
   </div>
 
   <footer>
-    <div class="row center-align footer">
-      <div class="col s3">
-        <i class="material-icons" style="margin-top: -3%;">local_phone</i>
-        <span style="font-size: 18pt;">Contato</span>
-        <p style="margin-top: 1%;">(21) 96433-2057
-        </p>
-      </div>
-      <div class="col s3">
+    <div class="row center-align">
+      <div class="col s12 footer">
+        <span id="dataAtual"></span>
+        <div align="center">Niterói, Rio de Janeiro. </div>
         <p>
-          <img class="espacoRedesSociais" style="width: 20px;" src="../img/fb.png" />
-          <img class="espacoRedesSociais" style="width: 20px;" src="../img/instagram.png" />
-          <img class="espacoRedesSociais" style="width: 20px;" src="../img/twitter.png" />
-        </p>
-      </div>
-      <div class="col s3">
-        Formas de Pagamento
-        <p>
-          <i class="material-icons">credit_card</i>
-          <i class="material-icons">local_atm</i>
+          <a href="https://www.linkedin.com/in/felipe-guimarães-46bb3869/" target="_blank">
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/linkedin.png" />
+          </a>
+          <a href="https://www.instagram.com/felipeguimaraess" target="_blank">
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/instagram.png" />
+          </a>
+          <a href="https://www.facebook.com/guimaraes.felipe1" target="_blank">
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/fb.png" />
+          </a>
+          <a href="skype:felipe.tt92?add" target="_blank">  
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/skype.png" />
+          </a>
+          <a href="https://utivarejo.slack.com/" target="_blank">
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/slack.png" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5521964332057" target="_blank">
+            <img class="espacoRedesSociais" style="width: 25px;" src="../img/whatsapp.png" />
+          </a>
         </p>
       </div>
     </div>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="../js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/sweetalert.min.js"></script>
+  <script src="../js/sweetalert-dev.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_vcvwQB0ubBs6nBkeKIVtG");
+    })();
+  </script>
 </body>
 
 </html>

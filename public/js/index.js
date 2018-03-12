@@ -31,7 +31,7 @@ function addActions() {
   downloadCV()
   var date = new Date();
   var day = date.getDate();
-  if(day.toString.length == 1)
+  if(day < 10)
     day = "0" + day;
   var month = date.getMonth();
   month = getMonthName(month);

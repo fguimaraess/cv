@@ -33,11 +33,10 @@ body {
 }
 
  .footer {
-    position: absolute;
     background: lightslategrey !important;
     color: white !important;
-    padding-top: 1%;
     bottom: 0 !important;
+    margin: 0 !important;
 }  
 
 #menuSmall {

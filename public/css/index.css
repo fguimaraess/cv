@@ -73,6 +73,10 @@ body {
     color: white;
 }
 
+.dropdown-content li {
+    line-height: 3.5rem !important;
+}
+
 #description {
     text-align: left;
 }
@@ -91,9 +95,16 @@ body {
     font-weight: bold;
 }
 
-.borderCV {
+.borderCV, .borderProj {
+    text-align: justify;
     border: 1px solid;
     padding-left: 1%;
+    padding-right: 1%;
+    width: 150%;
+}
+
+.arrow {
+    font-size: 15px !important;
 }
 
 @media (max-width: 880px) and (min-width: 541px)
@@ -111,4 +122,9 @@ body {
         text-align: left;
         font-size: 8pt;
     }
+
+    .skills-img {
+    width: 15px;
+    height: 15px;
+}
 }
